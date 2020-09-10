@@ -314,12 +314,34 @@ h2 {
           animation: moving-text 25s linear infinite;
 }
 
+.mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
   body .header h1 {
     font-size: 11vh;
   }
   body .slogan h2 {
     font-size: 7vh;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .header-links,
+  .header,
+  .slogan,
+  .team-page,
+  .footer {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    text-align: center;
+  }
+  .mobile img {
+    margin-top: 50px;
+    width: 200px;
   }
 }
 /*# sourceMappingURL=style.css.map */

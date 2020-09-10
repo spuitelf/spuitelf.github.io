@@ -200,6 +200,10 @@ h2 {
   animation: moving-text 25s linear infinite;
 }
 
+.mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
   body {
     .header {
@@ -212,6 +216,26 @@ h2 {
       h2 {
         font-size: 7vh;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .header-links,
+  .header,
+  .slogan,
+  .team-page,
+  .footer {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    text-align: center;
+
+    img {
+      margin-top: 50px;
+      width: 200px;
     }
   }
 }
