@@ -1,0 +1,325 @@
+.slide-right {
+  -webkit-animation: 3s slide-right;
+          animation: 3s slide-right;
+}
+
+.slide-left {
+  -webkit-animation: 3s slide-left;
+          animation: 3s slide-left;
+}
+
+.oppacity {
+  -webkit-animation: 4s oppacity;
+          animation: 4s oppacity;
+}
+
+@-webkit-keyframes oppacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes oppacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@-webkit-keyframes slide-right {
+  from {
+    margin-left: -100%;
+    opacity: 0;
+  }
+  to {
+    margin-left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+    opacity: 0;
+  }
+  to {
+    margin-left: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-left {
+  from {
+    margin-left: 200%;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 200%;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes moving-text {
+  100% {
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+  }
+}
+
+@keyframes moving-text {
+  100% {
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+  }
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  font-family: tenon, sans-serif;
+  color: #fff;
+}
+
+p {
+  font-family: tenon, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}
+
+h2,
+h3 {
+  font-family: "Jockey One", sans-serif;
+  text-align: center;
+  font-weight: 900;
+  margin: 0;
+}
+
+h2 {
+  font-size: 12vh;
+}
+
+.header-links {
+  z-index: 5;
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: #e24747;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px 5%;
+}
+
+.header-links a {
+  margin-top: 15px;
+  font-size: 4vh;
+  height: 30px;
+}
+
+.header-links a:hover {
+  text-decoration: none;
+  border-bottom: 3px solid #fff;
+}
+
+.header-links img {
+  height: 60px;
+}
+
+.header-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header {
+  margin-top: -50px;
+  height: 100vh;
+  background-color: #e24747;
+}
+
+.header .header-text {
+  color: #fff;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header .header-text .background-text {
+  position: absolute;
+  margin-left: -200px;
+  -webkit-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+  opacity: 70%;
+}
+
+.header .header-text .background-text .moving-text {
+  margin: -40px 0;
+}
+
+.header .header-text .background-text .extra-margin-right {
+  margin-right: -200px;
+}
+
+.header .header-text .background-text .extra-margin-right2 {
+  margin-right: 200px;
+}
+
+.header .header-text .main-title {
+  z-index: 2;
+}
+
+.header h1 {
+  margin: 0;
+  font-family: "Jockey One", sans-serif;
+  font-size: 18vh;
+  text-align: center;
+  color: black;
+  font-weight: 900;
+}
+
+.slogan {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slogan img {
+  position: absolute;
+  width: 70%;
+  opacity: 70%;
+}
+
+.slogan h2 {
+  z-index: 4;
+  color: black;
+  opacity: 100%;
+}
+
+.team-page h3 {
+  font-size: 8vh;
+}
+
+.team-page p {
+  text-align: center;
+  font-family: tenon, sans-serif;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  font-size: 120%;
+  width: 600px;
+}
+
+.team {
+  font-family: tenon, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 100px;
+}
+
+.team .team-card {
+  margin: 0 50px 40px 50px;
+}
+
+.team .team-card .team-img {
+  border-left: 12px solid #e24747;
+  width: 210px;
+}
+
+.footer {
+  margin-top: 50px;
+  padding: 10px 0;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+}
+
+.background-text {
+  position: relative;
+}
+
+.moving-text {
+  position: relative;
+  -webkit-animation: moving-text 25s linear infinite;
+          animation: moving-text 25s linear infinite;
+}
+
+@media only screen and (max-width: 600px) {
+  body .header h1 {
+    font-size: 11vh;
+  }
+  body .slogan h2 {
+    font-size: 7vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */

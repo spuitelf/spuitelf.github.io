@@ -1,0 +1,89 @@
+.slide-right {
+  -webkit-animation: 3s slide-right;
+          animation: 3s slide-right;
+}
+
+.slide-left {
+  -webkit-animation: 3s slide-left;
+          animation: 3s slide-left;
+}
+
+.oppacity {
+  -webkit-animation: 4s oppacity;
+          animation: 4s oppacity;
+}
+
+@-webkit-keyframes oppacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes oppacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@-webkit-keyframes slide-right {
+  from {
+    margin-left: -100%;
+    opacity: 0;
+  }
+  to {
+    margin-left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+    opacity: 0;
+  }
+  to {
+    margin-left: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-left {
+  from {
+    margin-left: 200%;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 200%;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes moving-text {
+  100% {
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+  }
+}
+
+@keyframes moving-text {
+  100% {
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+  }
+}
+/*# sourceMappingURL=animations.css.map */
